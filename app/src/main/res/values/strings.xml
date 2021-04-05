@@ -5,4 +5,14 @@
     <string name="NewPass">Masukkan Password</string>
     <string name="DataKontak">Data Kontak</string>
     <string name="Login">Login</string>
+    <string name="Pendaftaran">Pendaftaran</string>
+    <string name="Agama">Agama :</string>
+    <string name="Katolik">Katolik</string>
+    <string name="Islam">Islam</string>
+    <string name="Hindu">Hindu</string>
+    <string name="Budha">Budha</string>
+    <string name="Konghuchu">Konghuchu</string>
+    <string name="Penganut">Penganut <br></br>Kepercayaan</string>
+    <string name="Kristen">Kristen</string>
+    <string name="Kelamin">Jenis Kelamin:</string>
 </resources>
