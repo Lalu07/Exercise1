@@ -3,4 +3,6 @@
     <string name="daftar">Belum Daftar?</string>
     <string name="Newnama">Masukkan Nama</string>
     <string name="NewPass">Masukkan Password</string>
+    <string name="DataKontak">Data Kontak</string>
+    <string name="Login">Login</string>
 </resources>
