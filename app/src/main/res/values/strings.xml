@@ -22,4 +22,10 @@
     <string name="rePass">Masukkan Kembali Password</string>
     <string name="batal">Batal</string>
     <string name="daftar">Datar</string>
+    <string name="lihatdata">Lihat Data</string>
+    <string name="liharnomor">Lihat Nomor</string>
+    <string name="namaitem">Nama Item</string>
+    <string name="detailKontak">Detail Kontak</string>
+    <string name="nama">Nama</string>
+    <string name="notel">No Telepon</string>
 </resources>

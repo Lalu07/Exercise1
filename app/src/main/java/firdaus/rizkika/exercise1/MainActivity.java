@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         Mendaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent a = new Intent(MainActivity.this, Daftar.class);
+                Intent a = new Intent(getApplicationContext(), Daftar.class);
                 startActivity(a);
             }
         });
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (nama.equals(email) && pass.equals(password)){
             Toast.makeText(getApplicationContext(),"Login Berhasil",Toast.LENGTH_SHORT).show();
-            Intent i = new Intent(MainActivity.this,dataKontak.class);
+            Intent i = new Intent(getApplicationContext(),dataKontak.class);
             startActivity(i);
         }
         else {

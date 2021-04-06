@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".dataKontak">
+    tools:context=".dataKontak"
+    android:padding="16dp">
 
     <SearchView
         android:id="@+id/searchbox"
@@ -25,9 +26,8 @@
 
     <ListView
         android:id="@+id/listKontak"
-        android:dividerHeight="2pt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@color/design_default_color_secondary"
-        />
+        android:dividerHeight="2pt" />
 </LinearLayout>
