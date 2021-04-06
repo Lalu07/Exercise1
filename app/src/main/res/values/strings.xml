@@ -28,4 +28,5 @@
     <string name="detailKontak">Detail Kontak</string>
     <string name="nama">Nama</string>
     <string name="notel">No Telepon</string>
+    <string name="HINT">Pass dan Email Disini</string>
 </resources>

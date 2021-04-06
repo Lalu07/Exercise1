@@ -15,7 +15,7 @@ import com.google.android.material.textfield.TextInputLayout;
 public class MainActivity extends AppCompatActivity {
 
     TextInputLayout Nama, Pass;
-    TextView Mendaftar;
+    TextView Mendaftar,Petunjuk;
     Button Masuk;
     String nama,pass;
     String email = "admin@mail.com";
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Pass = findViewById(R.id.EdPass);
         Masuk = findViewById(R.id.LoginBtn);
         Mendaftar = findViewById(R.id.daftar);
+        Petunjuk = findViewById(R.id.edHINT);
 
         Masuk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +45,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        Petunjuk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Email : admin@email.com / Pass : 123", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     public void pindah()
