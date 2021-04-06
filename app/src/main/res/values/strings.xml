@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Exercise1</string>
-    <string name="daftar">Belum Daftar?</string>
+    <string name="daftarB">Belum Daftar?</string>
     <string name="Newnama">Masukkan Nama</string>
     <string name="NewPass">Masukkan Password</string>
     <string name="DataKontak">Data Kontak</string>
@@ -15,4 +15,11 @@
     <string name="Penganut">Penganut <br></br>Kepercayaan</string>
     <string name="Kristen">Kristen</string>
     <string name="Kelamin">Jenis Kelamin:</string>
+    <string name="masukNama">Masukkan Nama</string>
+    <string name="masukAlamat">Masukkan Alamat</string>
+    <string name="masukEmail">Masukkan Email</string>
+    <string name="masukPass">Masukkan Password</string>
+    <string name="rePass">Masukkan Kembali Password</string>
+    <string name="batal">Batal</string>
+    <string name="daftar">Datar</string>
 </resources>

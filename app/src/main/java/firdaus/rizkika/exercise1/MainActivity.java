@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText Nama, Pass;
+    TextView Mendaftar;
     Button Masuk;
     String nama,pass;
     String email = "admin@mail.com";
@@ -26,10 +27,19 @@ public class MainActivity extends AppCompatActivity {
         Nama = findViewById(R.id.EdNama);
         Pass = findViewById(R.id.EdPass);
         Masuk = findViewById(R.id.LoginBtn);
+        Mendaftar = findViewById(R.id.daftar);
 
         Masuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { pindah(); }
+        });
+
+        Mendaftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(MainActivity.this, Daftar.class);
+                startActivity(a);
+            }
         });
 
 
