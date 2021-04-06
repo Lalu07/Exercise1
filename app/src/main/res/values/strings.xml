@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Exercise1</string>
     <string name="daftarB">Belum Daftar?</string>
-    <string name="Newnama">Masukkan Nama</string>
+    <string name="Newnama">Masukkan Email</string>
     <string name="NewPass">Masukkan Password</string>
     <string name="DataKontak">Data Kontak</string>
     <string name="Login">Login</string>

@@ -10,9 +10,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputLayout;
+
 public class MainActivity extends AppCompatActivity {
 
-    EditText Nama, Pass;
+    TextInputLayout Nama, Pass;
     TextView Mendaftar;
     Button Masuk;
     String nama,pass;
@@ -47,19 +49,24 @@ public class MainActivity extends AppCompatActivity {
 
     public void pindah()
     {
-        nama = Nama.getText().toString();
-        pass = Pass.getText().toString();
+        nama = Nama.getEditText().getText().toString();
+        pass = Pass.getEditText().getText().toString();
 
-        if (nama.equals(email) && pass.equals(password)){
+        if (nama.isEmpty() && pass.isEmpty()){
+            Nama.setError("Email Harus di isi!");
+            Pass.setError("Password Harus di isi!");
+            Toast.makeText(getApplicationContext(),"Isi data yang di sediakan!",Toast.LENGTH_LONG).show();
+        }
+        else if(nama.isEmpty()){
+            Nama.setError("Email Harus di isi!");
+        }
+        else if (pass.isEmpty()){
+            Pass.setError("Password Harus di isi!");
+        }
+        else if (nama.equals(email) && pass.equals(password)){
             Toast.makeText(getApplicationContext(),"Login Berhasil",Toast.LENGTH_SHORT).show();
             Intent i = new Intent(MainActivity.this,dataKontak.class);
             startActivity(i);
-        }
-        else if(nama.isEmpty()){
-            Toast.makeText(getApplicationContext(),"Email Tidak boleh kosong",Toast.LENGTH_SHORT).show();
-        }
-        else if (pass.isEmpty()){
-            Toast.makeText(getApplicationContext(),"Password tidak boleh kosong",Toast.LENGTH_SHORT).show();
         }
         else {
             Toast.makeText(getApplicationContext(),"Login gagal",Toast.LENGTH_LONG).show();
