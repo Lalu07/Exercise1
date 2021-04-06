@@ -46,10 +46,8 @@ public class dataKontak extends AppCompatActivity implements PopupMenu.OnMenuIte
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String nama = classNamaArrayList.get(position).getName();
-
                 bundle.putString("a",nama.trim());
                 PopupMenu pm = new PopupMenu(getApplicationContext(),view);
-
                 pm.setOnMenuItemClickListener(dataKontak.this);
                 pm.inflate(R.menu.popup_menu);
                 pm.show();

@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 public class LihatData extends AppCompatActivity {
     TextView newNama, newNomor;
+    Bundle bundle = new Bundle();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

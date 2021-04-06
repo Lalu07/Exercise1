@@ -77,122 +77,88 @@
 
         </TableRow>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="231dp">
+            android:layout_height="155dp"
+            android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/radioButton16"
-                android:layout_width="35pt"
-                android:layout_height="wrap_content"
-                android:text="@string/Islam"
-                android:textSize="10sp"
-                app:buttonTint="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.277"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.497" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="76dp"
+                android:layout_height="146dp">
 
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="58dp"
+                    android:layout_height="26dp"
+                    android:text="@string/Agama"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <RadioButton
-                android:id="@+id/rad17"
-                android:layout_width="35pt"
-                android:layout_height="wrap_content"
-                android:text="@string/Katolik"
-                android:textSize="10sp"
-                app:buttonTint="@color/black"
-                app:layout_constraintBottom_toTopOf="@+id/radioButton16"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.276"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.372" />
+            <RadioGroup
+                android:layout_width="87dp"
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/radioButton18"
-                android:layout_width="35pt"
-                android:layout_height="wrap_content"
-                android:text="@string/Kristen"
-                android:textSize="10sp"
-                app:buttonTint="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.277"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioButton16"
-                app:layout_constraintVertical_bias="0.636" />
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Katolik"
+                    android:buttonTint="@color/black"/>
 
-            <RadioButton
-                android:id="@+id/radioButton19"
-                android:layout_width="35pt"
-                android:layout_height="wrap_content"
-                android:text="@string/Hindu"
-                android:textSize="10sp"
-                app:buttonTint="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.113"
-                app:layout_constraintStart_toEndOf="@+id/radioButton16"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.497" />
+                <RadioButton
+                    android:id="@+id/radioButton11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Islam"
+                    android:buttonTint="@color/black"/>
 
-            <RadioButton
-                android:id="@+id/radioButton20"
-                android:layout_width="35pt"
-                android:layout_height="wrap_content"
-                android:text="@string/Budha"
-                android:textSize="10sp"
-                app:buttonTint="@color/black"
-                app:layout_constraintBottom_toTopOf="@+id/radioButton19"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.105"
-                app:layout_constraintStart_toEndOf="@+id/rad17"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.372" />
+                <RadioButton
+                    android:id="@+id/radioButton12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Kristen"
+                    android:buttonTint="@color/black"/>
+            </RadioGroup>
 
-            <RadioButton
-                android:id="@+id/radioButton21"
-                android:layout_width="45pt"
-                android:layout_height="wrap_content"
-                android:text="@string/Konghuchu"
-                android:textSize="10sp"
-                app:buttonTint="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.122"
-                app:layout_constraintStart_toEndOf="@+id/radioButton18"
-                app:layout_constraintTop_toBottomOf="@+id/radioButton19"
-                app:layout_constraintVertical_bias="0.636" />
+            <RadioGroup
+                android:layout_width="90dp"
+                android:layout_height="146dp">
+                <RadioButton
+                    android:id="@+id/radioButton13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Hindu"
+                    android:buttonTint="@color/black"/>
 
-            <RadioButton
-                android:id="@+id/radioButton22"
-                android:layout_width="45pt"
-                android:layout_height="wrap_content"
-                android:text="@string/Penganut"
-                android:textSize="10sp"
-                app:buttonTint="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.304"
-                app:layout_constraintStart_toEndOf="@+id/radioButton20"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.089" />
+                <RadioButton
+                    android:id="@+id/radioButton14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Budha"
+                    android:buttonTint="@color/black"/>
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Agama"
-                android:textSize="8pt"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/radioButton16"
-                app:layout_constraintHorizontal_bias="0.014"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <RadioButton
+                    android:id="@+id/radioButton15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Konghuchu"
+                    android:buttonTint="@color/black"/>
+            </RadioGroup>
+            <RadioGroup
+                android:layout_width="123dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radioButton16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Penganut"
+                    android:buttonTint="@color/black"/>
+            </RadioGroup>
 
+        </LinearLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
